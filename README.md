@@ -1,32 +1,54 @@
-# Enhancing Liver Cirrhosis Detection Using SVM and KNN
+Liver Tumor Classification using SVM & KNN
 
-## Overview
-This project focuses on developing an automated system to detect liver cirrhosis using X-ray images and machine learning algorithms such as Support Vector Machine (SVM) and K-Nearest Neighbors (KNN). The model classifies images into Normal and Tumor categories to assist in early diagnosis.
+Overview
 
-## Features
+This project focuses on detecting liver tumors from CT scan images using machine learning techniques. The system classifies images into Normal and Tumor categories using Support Vector Machine (SVM) and K-Nearest Neighbors (KNN) algorithms. A simple GUI is provided for real-time prediction.
+
+Features
+
 - Image classification (Normal vs Tumor)
-- Feature extraction using image processing
+- Feature extraction using OpenCV
 - Machine Learning models: SVM and KNN
-- Simple frontend interface for prediction
+- GUI-based prediction system
 
-## Tech Stack
+Technologies Used
+
 - Python
-- OpenCV, NumPy, Scikit-learn
-- React (Frontend)
+- OpenCV
+- NumPy
+- Scikit-learn
+- Tkinter
 
-## Dataset
-- Liver X-ray images categorized into Normal and Tumor
+Dataset
+
+- Contains CT scan images categorized into:
+  - "normal"
+  - "tumor"
 - Includes corresponding mask images
-- ⚠️ Note: Only a subset of the dataset is uploaded due to size limitations
+- Note: Only a subset of the dataset is uploaded due to size limitations
 
-## How to Run
-1. Run `feature_extraction.py`
-2. Run `project.py`
-3. Start the frontend application
+Project Workflow
 
-## Output
-- Predicts liver condition (Normal or Tumor)
-- Displays model performance and accuracy
+1. Load dataset from folders
+2. Resize images to 64x64
+3. Extract features using image processing
+4. Train SVM and KNN models
+5. Predict output using GUI
 
-## Author
+How to Run
+
+1. Install required libraries:
+   pip install numpy opencv-python scikit-learn tqdm
+2. Run feature extraction:
+   python feature_extraction.py
+3. Run the application:
+   python project.py
+
+Output
+
+- Classifies input image as Normal or Tumor
+- Displays prediction result in GUI
+
+Author
+
 Tejaswi Yadlapalli
